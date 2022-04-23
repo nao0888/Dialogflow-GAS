@@ -1,0 +1,91 @@
+{
+  "id": "102091c8-24fb-42d7-a151-ee82d82302a3",
+  "name": "yoyaku - name",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "yoyaku-custom-followup"
+  ],
+  "contexts": [
+    "yoyaku-custom-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "yoyaku.yoyaku-custom.yoyaku-custom-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "any",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$any",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "#yoyaku-custom-followup.date-time、$any様のご予約を承りました。\n(開発ディベロッパー動作確認用　スプレットシート確認)"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "田中",
+          "userDefined": false,
+          "alias": "any",
+          "meta": "@sys.any"
+        },
+        {
+          "text": "です",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c9952656-0b5f-4c1a-b4a2-16907633be53",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "斉藤",
+          "userDefined": false,
+          "alias": "any",
+          "meta": "@sys.any"
+        }
+      ],
+      "count": 0,
+      "id": "bf245617-cfc5-455e-9133-0fd9a78d8302",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
